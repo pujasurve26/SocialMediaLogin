@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		E9098252274CB2D1008CC7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9098251274CB2D1008CC7F7 /* AppDelegate.swift */; };
 		E9098254274CB2D1008CC7F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9098253274CB2D1008CC7F7 /* SceneDelegate.swift */; };
-		E9098256274CB2D1008CC7F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9098255274CB2D1008CC7F7 /* ViewController.swift */; };
+		E9098256274CB2D1008CC7F7 /* SocialMediaLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9098255274CB2D1008CC7F7 /* SocialMediaLoginViewController.swift */; };
 		E9098259274CB2D1008CC7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9098257274CB2D1008CC7F7 /* Main.storyboard */; };
 		E909825B274CB2D4008CC7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E909825A274CB2D4008CC7F7 /* Assets.xcassets */; };
 		E909825E274CB2D4008CC7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E909825C274CB2D4008CC7F7 /* LaunchScreen.storyboard */; };
+		E9098267274CB7B0008CC7F7 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = E9098266274CB7B0008CC7F7 /* FacebookCore */; };
+		E9098269274CB7B0008CC7F7 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E9098268274CB7B0008CC7F7 /* FacebookLogin */; };
+		E909826C274CC649008CC7F7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E909826B274CC649008CC7F7 /* GoogleSignIn */; };
+		E909826E274D0B76008CC7F7 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E909826D274D0B76008CC7F7 /* UserDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E909824E274CB2D1008CC7F7 /* SocialMediaLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9098251274CB2D1008CC7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9098253274CB2D1008CC7F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9098255274CB2D1008CC7F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9098255274CB2D1008CC7F7 /* SocialMediaLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaLoginViewController.swift; sourceTree = "<group>"; };
 		E9098258274CB2D1008CC7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E909825A274CB2D4008CC7F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E909825D274CB2D4008CC7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E909825F274CB2D4008CC7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E909826D274D0B76008CC7F7 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9098269274CB7B0008CC7F7 /* FacebookLogin in Frameworks */,
+				E9098267274CB7B0008CC7F7 /* FacebookCore in Frameworks */,
+				E909826C274CC649008CC7F7 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +66,9 @@
 			children = (
 				E9098251274CB2D1008CC7F7 /* AppDelegate.swift */,
 				E9098253274CB2D1008CC7F7 /* SceneDelegate.swift */,
-				E9098255274CB2D1008CC7F7 /* ViewController.swift */,
+				E9098255274CB2D1008CC7F7 /* SocialMediaLoginViewController.swift */,
 				E9098257274CB2D1008CC7F7 /* Main.storyboard */,
+				E909826D274D0B76008CC7F7 /* UserDetailsViewController.swift */,
 				E909825A274CB2D4008CC7F7 /* Assets.xcassets */,
 				E909825C274CB2D4008CC7F7 /* LaunchScreen.storyboard */,
 				E909825F274CB2D4008CC7F7 /* Info.plist */,
@@ -83,6 +92,11 @@
 			dependencies = (
 			);
 			name = SocialMediaLogin;
+			packageProductDependencies = (
+				E9098266274CB7B0008CC7F7 /* FacebookCore */,
+				E9098268274CB7B0008CC7F7 /* FacebookLogin */,
+				E909826B274CC649008CC7F7 /* GoogleSignIn */,
+			);
 			productName = SocialMediaLogin;
 			productReference = E909824E274CB2D1008CC7F7 /* SocialMediaLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = E9098245274CB2D1008CC7F7;
+			packageReferences = (
+				E9098265274CB7B0008CC7F7 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				E909826A274CC649008CC7F7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = E909824F274CB2D1008CC7F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9098256274CB2D1008CC7F7 /* ViewController.swift in Sources */,
+				E9098256274CB2D1008CC7F7 /* SocialMediaLoginViewController.swift in Sources */,
 				E9098252274CB2D1008CC7F7 /* AppDelegate.swift in Sources */,
+				E909826E274D0B76008CC7F7 /* UserDetailsViewController.swift in Sources */,
 				E9098254274CB2D1008CC7F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,6 +381,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9098265274CB7B0008CC7F7 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E909826A274CC649008CC7F7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9098266274CB7B0008CC7F7 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9098265274CB7B0008CC7F7 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		E9098268274CB7B0008CC7F7 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9098265274CB7B0008CC7F7 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		E909826B274CC649008CC7F7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E909826A274CC649008CC7F7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9098246274CB2D1008CC7F7 /* Project object */;
 }
