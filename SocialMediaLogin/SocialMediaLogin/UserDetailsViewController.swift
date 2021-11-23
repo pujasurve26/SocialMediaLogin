@@ -22,8 +22,8 @@ class UserDetailsViewController: UIViewController {
     }
   
     func setData() {
-        lblName.text = dict["name"] as! String
-        lblEmail.text = dict["email"] as! String
+        lblName.text = ("Name: \(dict["name"] as! String)")
+        lblEmail.text = ("Password: \(dict["email"] as! String)")
         
         let picture = dict["picture"] as? [String: Any]
         let data = picture?["data"] as? [String: Any]
@@ -33,6 +33,8 @@ class UserDetailsViewController: UIViewController {
             let data = try? Data(contentsOf: url)
             imgProfilePic.image = UIImage(data: data!)
         }
+        
+        imgProfilePic.setShadow()
     }
 
 }
