@@ -14,6 +14,8 @@ class SocialMediaLoginViewController: UIViewController {
     @IBOutlet weak var viwMain : UIView!
     @IBOutlet weak var txtUsername : UITextField!
     @IBOutlet weak var txtPassword : UITextField!
+    @IBOutlet weak var viwUsername : UIView!
+    @IBOutlet weak var viwPassword : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class SocialMediaLoginViewController: UIViewController {
         setSocialLogin()
         
         viwMain.setShadow()
+        viwUsername.setShadow()
+        viwPassword.setShadow()
     }
     
     
