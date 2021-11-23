@@ -23,17 +23,15 @@
 	</dict>
     
     <key>CFBundleURLTypes</key>
-    
     <array>
-        <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-            <string>com.googleusercontent.apps.148674078750-g9koua7b5uq26d8tjkofpngsnev4lvup</string>
-          <string>fb302354048356391</string>
-        </array>
-        </dict>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>148674078750-g9koua7b5uq26d8tjkofpngsnev4lvup.apps.googleusercontent.com</string>
+        <string>fb302354048356391</string>
+      </array>
+      </dict>
     </array>
-    
     <key>FacebookAppID</key>
     <string>302354048356391</string>
     <key>FacebookClientToken</key>
